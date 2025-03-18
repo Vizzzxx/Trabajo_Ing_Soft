@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión / Registrarse</title>
+
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../assets/css/Inicio_sesion.css">
+
+    <!-- Iconos de Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Formulario de Inicio de Sesión -->
+        <div class="form-box login">
+            <form action="#">
+                <h1>Iniciar Sesión</h1>
+
+                <!-- Campo de nombre de usuario -->
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre de usuario" required>
+                    <i class='bx bxs-user'></i> <!-- Ícono de usuario -->
+                </div>
+
+                <!-- Campo de contraseña -->
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class='bx bxs-lock-alt'></i> <!-- Ícono de candado -->
+                </div>
+
+                <!-- Enlace para recuperar contraseña -->
+                <div class="forgot-link">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <!-- Botón para enviar el formulario de inicio de sesión -->
+                <button type="submit" class="btn">Iniciar Sesión</button>
+
+                <!-- Texto para iniciar sesión con redes sociales -->
+                <p>o inicia sesión con redes sociales</p>
+
+                <!-- Iconos de redes sociales -->
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google'></i></a> <!-- Google -->
+                    <a href="#"><i class='bx bxl-facebook'></i></a> <!-- Facebook -->
+                    <a href="#"><i class='bx bxl-github'></i></a> <!-- GitHub -->
+                    <a href="#"><i class='bx bxl-linkedin'></i></a> <!-- LinkedIn -->
+                </div>
+            </form>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <div class="form-box register">
+            <form action="#">
+                <h1>Registro</h1>
+
+                <!-- Campo de nombre de usuario -->
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre de usuario" required>
+                    <i class='bx bxs-user'></i> <!-- Ícono de usuario -->
+                </div>
+
+                <!-- Campo de correo electrónico -->
+                <div class="input-box">
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <i class='bx bxs-envelope'></i> <!-- Ícono de correo -->
+                </div>
+
+                <!-- Campo de contraseña -->
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class='bx bxs-lock-alt'></i> <!-- Ícono de candado -->
+                </div>
+
+                <!-- Botón para enviar el formulario de registro -->
+                <button type="submit" class="btn">Registrarse</button>
+
+                <!-- Texto para registrarse con redes sociales -->
+                <p>o regístrate con redes sociales</p>
+
+                <!-- Iconos de redes sociales -->
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google'></i></a> <!-- Google -->
+                    <a href="#"><i class='bx bxl-facebook'></i></a> <!-- Facebook -->
+                    <a href="#"><i class='bx bxl-github'></i></a> <!-- GitHub -->
+                    <a href="#"><i class='bx bxl-linkedin'></i></a> <!-- LinkedIn -->
+                </div>
+            </form>
+        </div>
+
+        <!-- Panel de alternancia entre Iniciar Sesión y Registrarse -->
+        <div class="toggle-box">
+            <!-- Panel para mostrar el formulario de registro -->
+            <div class="toggle-panel toggle-left">
+                <h1>¡Hola, Bienvenido!</h1>
+                <p>¿No tienes una cuenta?</p>
+                <button class="btn register-btn">Registrarse</button>
+            </div>
+
+            <!-- Panel para mostrar el formulario de inicio de sesión -->
+            <div class="toggle-panel toggle-right">
+                <h1>¡Bienvenido de nuevo!</h1>
+                <p>¿Ya tienes una cuenta?</p>
+                <button class="btn login-btn">Iniciar Sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Conexión al archivo JavaScript personalizado -->
+    <script src="../js/Inicio_sesion.js"></script>
+</body>
+</html>
